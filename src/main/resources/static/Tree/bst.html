@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-10" />
+    <title>BST Visualizer</title>
+    <link rel="stylesheet" href="tree.css" />
+</head>
+<body>
+<div class="main-header">
+    <h2 class="title">Binary Search Tree</h2>
+</div>
+
+<!-- Combined controls in one line -->
+<div class="controls">
+    <input id="inputArray" type="text" class="input-box" placeholder="e.g. 10 5 15 3 7" />
+    <button class="button" onclick="buildTree()">Build</button>
+    <button class="button" onclick="clearTree()">Clear</button>
+
+    <select id="operationSelect" class="input-box">
+        <option value="insert">Insert</option>
+        <option value="delete">Delete</option>
+        <option value="search">Search</option>
+    </select>
+    <input id="operationValue" type="number" class="input-box" placeholder="Enter value" />
+    <button class="button" onclick="performOperation()">Execute</button>
+</div>
+
+<div id="tree-container"></div>
+
+<script src="bst.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tree Visualizer</title>
+    <link rel="stylesheet" href="tree.css" />
+</head>
+<body>
+
+<header class="main-header">
+    <h1 class="title">🌳 Tree Visualizer</h1>
+</header>
+
+<div class="controls">
+    <input id="levelOrderInput" class="input-box" placeholder="[1,2,3,4,null,5]">
+    <select id="traversalType" class="input-box">
+        <option value="inorder">Inorder</option>
+        <option value="preorder">Preorder</option>
+        <option value="postorder">Postorder</option>
+        <option value="levelorder">Level Order</option>
+    </select>
+    <button id="buildTreeBtn" class="button">🌱 Build</button>
+    <button id="traverseTreeBtn" class="button">▶ Traverse</button>
+</div>
+
+<div id="tree-container">
+    <svg class="edge-svg"></svg>
+</div>
+
+<div id="output">Output: []</div>
+
+<script src="tree.js"></script>
+</body>
+</html>
+
+
+

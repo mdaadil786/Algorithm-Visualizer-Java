@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+#outputBox {
+  padding: 8px 12px;
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  font-weight: bold;
+}
+
+#graphVisualizer {
+  position: relative;
+  height: 500px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Node styles */
+.node {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+/* Edge styles */
+.edge-line {
+  position: absolute;
+  height: 2px;
+  background-color: #888;
+  transform-origin: left center;
+  transition: all 0.5s ease;
+}
+.node.highlight {
+  background-color: #ff9800;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.node.visited {
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+
+#startNode {
+  padding: 6px;
+  font-size: 14px;
+  margin-top: 8px;
+  width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

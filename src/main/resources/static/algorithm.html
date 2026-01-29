@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- 🌙 Dark Mode Toggle -->
+<div class="theme-toggle">
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+    </label>
+</div>
+
+<!-- 📌 Subtopic Heading -->
+<h1 class="header">Algorithm Name</h1>
+
+<!-- 📦 Visualizer Wrapper -->
+<div class="visualizer-wrapper">
+
+    <!-- 📊 Visualization Area -->
+    <div id="array-visual" class="visualizer-box"></div>
+
+    <!-- 🧾 Input / Output Section -->
+    <div class="input-output-container">
+        <input class="input-box" id="arrayInput" placeholder="Enter array like [5,2,7]" value="[5, 3, 8, 6, 2]" />
+        <input class="input-box" id="targetInput" placeholder="Enter target (for searching)" style="display: none;" />
+        <div id="output" class="output-box"></div>
+    </div>
+
+    <!-- 🎮 Control Buttons -->
+    <div class="controls">
+        <button class="run-button">▶ Run</button>
+        <button id="pauseResumeBtn">⏸ Pause</button>
+        <button id="prevStepBtn">⬅ Prev</button>
+        <button id="nextStepBtn">Next ➡</button>
+
+        <!-- 🎚️ Speed Range -->
+        <div class="speed-control">
+            <label for="speedRange">Speed:</label>
+            <input type="range" id="speedRange" min="50" max="1000" step="50" value="300" />
+        </div>
+    </div>
+
+    <!-- ⏱️ Time & Space -->
+    <div class="complexity">Time: - | Space: -</div>
+</div>
+<audio id="tickSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto"></audio>
+
+<!-- 📜 Logic Script -->
+<script src="algorithm.js"></script>
+
+</body>
+</html>

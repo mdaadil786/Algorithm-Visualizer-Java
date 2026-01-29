@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>📚 Algorithms to Visualize</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!--<h1>📚 Welcome to Algorithm Visualizer</h1>-->
+<!--   <header>Let’s Visualize Algorithms Together!</header>-->
+<header class="main-header">
+    <h1 class="title">📚 Algorithm Visualizer</h1>
+    <h1 class="subtitle">Let’s Visualize Algorithms Together!</h1>
+</header>
+
+
+
+
+<!-- 🌗 Dark mode toggle -->
+<div class="theme-toggle">
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+    </label>
+</div>
+
+<div class="topics">
+    <div class="topic" onclick="toggleSubtopics(this, 'sorting')">🔢 Sorting Algorithms</div>
+    <div class="subtopics" id="sorting">
+        <div onclick="goToAlgo('bubble')">Bubble Sort</div>
+        <div onclick="goToAlgo('selection')">Selection Sort</div>
+        <div onclick="goToAlgo('insertion')">Insertion Sort</div>
+        <div onclick="goToAlgo('merge')">Merge Sort</div>
+        <div onclick="goToAlgo('quick')">Quick Sort</div>
+        <div onclick="goToAlgo('heap')">Heap Sort</div>
+        <div onclick="goToAlgo('radix')">Radix Sort</div>
+    </div>
+    <div class="topic" onclick="toggleSubtopics(this, 'searching')">🔍 Searching Algorithms</div>
+    <div class="subtopics" id="searching">
+        <div onclick="goToAlgo('linear')">Linear Search</div>
+        <div onclick="goToAlgo('binary')">Binary Search</div>
+
+<!--        <div onclick="goToAlgo('interpolation')">Interpolation Search</div>-->
+    </div>
+    <div class="topic" onclick="toggleSubtopics(this, 'tree')">🌳 Tree Algorithms</div>
+    <div class="subtopics" id="tree">
+<!--        <div onclick="window.location.href=tree.html">Tree Traversal Visualizer</div>-->
+        <div onclick="window.location.href='Tree/tree.html'">Tree Traversal Visualizer</div>
+
+<!--        <div onclick="window.location.href=bst.html">BST Insert / Delete / Search</div>-->
+        <div onclick="window.location.href='Tree/bst.html'">BST Insert / Delete / Search</div>
+
+
+        <div onclick="goToAlgo('avl')">AVL Tree Rotations</div>
+        <div onclick="goToAlgo('rbtree')">Red Black Tree (Advanced)</div>
+    </div>
+    <div class="topic" onclick="toggleSubtopics(this, 'graph')">📈 Graph Algorithms</div>
+    <div class="subtopics" id="graph">
+
+        <div onclick="window.location.href='Graph/graph.html'">BFS Traversal/ DFS Traversal</div>
+        <div onclick="goToAlgo('dijkstra')">Dijkstra’s Algorithm</div>
+        <div onclick="goToAlgo('bellman')">Bellman-Ford</div>
+        <div onclick="goToAlgo('astar')">A* Algorithm</div>
+        <div onclick="goToAlgo('mst')">Kruskal’s & Prim’s (MST)</div>
+    </div>
+
+    <div class="topic" onclick="toggleSubtopics(this, 'dp')">🧠 Dynamic Programming</div>
+    <div class="subtopics" id="dp">
+<!--        <div onclick="goToAlgo('knapsack')">0/1 Knapsack</div>-->
+<!--        <div onclick="goToAlgo('lcs')">Longest Common Subsequence</div>-->
+<!--        <div onclick="goToAlgo('lis')">Longest Increasing Subsequence</div>-->
+<!--        <div onclick="goToAlgo('matrixchain')">Matrix Chain Multiplication</div>-->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
